@@ -21,3 +21,9 @@
     await this.messageModel.init();
   }
 ````
+
+## List
+
+- [ ] Watch free practice
+- [ ] Review code
+- [ ] Meeting with the team
