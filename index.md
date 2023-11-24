@@ -8,3 +8,16 @@
 
 ## image
 ![A mountain view](https://picsum.photos/seed/picsum/200/300)
+
+## Some code
+
+```ts
+  async createMessageCollection(chatId: string): Promise<void> {
+    const messageCollectionName = `messages_${chatId}`;
+    await this.messageModel.db.model<MessageDocument>(
+      messageCollectionName,
+      MessageSchema,
+    );
+    await this.messageModel.init();
+  }
+````
